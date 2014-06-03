@@ -36,7 +36,8 @@
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
-(setq org-log-done t)
+(setq org-log-done t
+      org-clock-persist-file (expand-file-name "org-clock-save.el" prelude-savefile-dir))
 
 (defun prelude-org-mode-defaults ()
   (let ((oldmap (cdr (assoc 'prelude-mode minor-mode-map-alist)))
