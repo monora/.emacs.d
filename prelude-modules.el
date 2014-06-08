@@ -5,12 +5,12 @@
 (require 'prelude-ido) ;; Super charges Emacs completion for C-x C-f and more
 ;; (require 'prelude-helm) ;; Interface for narrowing and search
 (require 'prelude-company)
-;; (require 'prelude-key-chord) ;; Binds useful features to key combinations
+(require 'prelude-key-chord) ;; Binds useful features to key combinations
 ;; (require 'prelude-mediawiki)
 ;; (require 'prelude-evil)
 
 ;;; Programming languages support
-(require 'prelude-c)
+;; (require 'prelude-c)
 (require 'prelude-clojure)
 ;; (require 'prelude-coffee)
 ;; (require 'prelude-common-lisp)
