@@ -19,6 +19,7 @@ projectile-bookmarks.eld
 session*
 .cask
 tramp
+/var/pcache
 personal/
 .gitmodules
 TAGS
