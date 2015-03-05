@@ -44,6 +44,10 @@
 (defvar prelude-packages
   '(ace-window
     avy
+    ace-jump-mode
+    ace-jump-buffer
+    ace-window
+    ;; ack-and-a-half
     anzu
     beacon
     browse-kill-ring
@@ -73,7 +77,9 @@
     undo-tree
     volatile-highlights
     zenburn-theme
-    zop-to-char)
+    zop-to-char
+    flycheck
+    )
   "A list of packages to ensure are installed at launch.")
 
 (defun prelude-packages-installed-p ()
