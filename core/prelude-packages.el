@@ -45,7 +45,7 @@
   '(ace-jump-mode
     ace-jump-buffer
     ace-window
-    ack-and-a-half
+    ;; ack-and-a-half
     anzu
     browse-kill-ring
     dash
@@ -72,7 +72,8 @@
     smartrep
     undo-tree
     volatile-highlights
-    zenburn-theme)
+    flycheck
+    )
   "A list of packages to ensure are installed at launch.")
 
 (defun prelude-packages-installed-p ()
