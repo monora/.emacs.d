@@ -99,8 +99,8 @@ by Prelude.")
 
 ;; the core stuff
 (require 'prelude-packages)
+(require 'prelude-custom)  ;; Needs to be loaded before core, editor and ui
 (require 'prelude-ui)
-(require 'prelude-custom)  ;; Needs to be loaded before core and editor
 (require 'prelude-core)
 (require 'prelude-mode)
 (require 'prelude-editor)
@@ -113,8 +113,10 @@ by Prelude.")
 (message "Loading Prelude's modules...")
 
 ;; the modules
-(when (file-exists-p prelude-modules-file)
-  (load prelude-modules-file))
+(if (file-exists-p prelude-modules-file)
+    (load prelude-modules-file)
+  (message "Missing modules file %s" prelude-modules-file)
+  (message "You can get started by copying the bundled example file"))
 
 ;; config changes made through the customize UI will be store here
 (setq custom-file (expand-file-name "custom.el" prelude-personal-dir))
@@ -131,3 +133,17 @@ by Prelude.")
  (run-at-time 5 nil 'prelude-tip-of-the-day))
 
 ;;; init.el ends here
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (json-mode js2-mode zop-to-char god-mode git-timemachine zenburn-theme yari web-mode volatile-highlights undo-tree smex smartrep smartparens scss-mode ruby-tools rainbow-mode rainbow-delimiters projectile paredit ov operate-on-number multiple-cursors move-text midje-mode markdown-mode magit log4j-mode leuven-theme key-chord java-snippets inf-ruby ido-ubiquitous guru-mode grizzl gitignore-mode gitconfig-mode gist flycheck flx-ido expand-region elisp-slime-nav easy-kill discover-my-major direx dired-details+ dired+ diminish diff-hl company color-theme-solarized browse-kill-ring anzu ace-window ace-jump-buffer ac-cider 4clojure))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
