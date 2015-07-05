@@ -146,7 +146,7 @@ by Prelude.")
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (json-mode js2-mode zop-to-char god-mode git-timemachine zenburn-theme yari web-mode volatile-highlights undo-tree smex smartrep smartparens scss-mode ruby-tools rainbow-mode rainbow-delimiters projectile paredit ov operate-on-number multiple-cursors move-text midje-mode markdown-mode magit log4j-mode leuven-theme key-chord java-snippets inf-ruby ido-ubiquitous guru-mode grizzl gitignore-mode gitconfig-mode gist flycheck flx-ido expand-region elisp-slime-nav easy-kill discover-my-major direx dired-details+ dired+ diminish diff-hl company color-theme-solarized browse-kill-ring anzu ace-window ace-jump-buffer ac-cider 4clojure))))
+    (json-mode js2-mode zop-to-char god-mode git-timemachine zenburn-theme yari web-mode volatile-highlights smex smartrep smartparens scss-mode ruby-tools rainbow-mode rainbow-delimiters projectile paredit ov operate-on-number multiple-cursors move-text midje-mode markdown-mode magit log4j-mode leuven-theme key-chord java-snippets inf-ruby ido-ubiquitous guru-mode grizzl gitignore-mode gitconfig-mode gist flycheck flx-ido expand-region elisp-slime-nav easy-kill discover-my-major direx dired-details+ dired+ diminish diff-hl company color-theme-solarized browse-kill-ring anzu ace-window ace-jump-buffer ac-cider 4clojure))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
