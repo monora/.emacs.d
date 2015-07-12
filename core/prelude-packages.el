@@ -42,10 +42,8 @@
 (package-initialize)
 
 (defvar prelude-packages
-  '(ace-jump-mode
-    ace-jump-buffer
-    ace-window
-    ;; ack-and-a-half
+  '(ace-window
+    avy
     anzu
     browse-kill-ring
     dash
