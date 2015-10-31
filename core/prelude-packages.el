@@ -76,6 +76,7 @@
     smartrep
     undo-tree
     volatile-highlights
+    flycheck
     zenburn-theme
     zop-to-char
     flycheck
